@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"br.com.unesp.academia.modelo","l":"AlunoAcademia"},{"p":"br.com.unesp.academia.aplicacao","l":"App"}];updateSearchResults();

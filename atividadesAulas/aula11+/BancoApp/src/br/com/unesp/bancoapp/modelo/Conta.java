@@ -2,9 +2,13 @@ package br.com.unesp.bancoapp.modelo;
 
 public class Conta {
 
-    private int numero;
-    private Cliente titular;
-    private double saldo;
+    protected int numero;
+    protected Cliente titular;
+    protected double saldo;
+
+    public Conta() {
+        
+    }
 
     public Conta(int numero, Cliente titular, double saldo) {
         this.numero = numero;
@@ -61,6 +65,10 @@ public class Conta {
             destino.deposita(valor);
         } // vamos utilizar os métodos ja existentes para facilitar
 
+    }
+
+    public void atualizaSaldo(double taxa) {
+        this.saldo += this.saldo * taxa;
     }
 
 }

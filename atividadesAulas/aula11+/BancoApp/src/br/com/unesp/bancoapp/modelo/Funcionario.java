@@ -2,9 +2,9 @@ package br.com.unesp.bancoapp.modelo;
 
 public class Funcionario {
 
-    private String nome;
-    private String cpf;
-    private double salario;
+    protected String nome;
+    protected String cpf;
+    protected double salario;
 
     public Funcionario(String nome, String cpf, double salario) {
         this.nome = nome;
@@ -34,6 +34,10 @@ public class Funcionario {
 
     public double getSalario() {
         return salario;
+    }
+
+    public double getBonificacao() {
+        return this.salario * 0.10;
     }
     
 }

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"trabalhoPraticoAgenda.src.br.com.unesp.agendapp.aplicacao"},{"l":"trabalhoPraticoAgenda.src.br.com.unesp.agendapp.modelo"},{"l":"trabalhoPraticoAgenda.src.br.com.unesp.agendapp.util"}];updateSearchResults();

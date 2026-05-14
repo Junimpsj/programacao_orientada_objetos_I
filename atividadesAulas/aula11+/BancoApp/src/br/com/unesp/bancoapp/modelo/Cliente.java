@@ -1,29 +1,68 @@
 package br.com.unesp.bancoapp.modelo;
 
-public class Cliente {
+/**
+ * Classe abstrata que representa um cliente do banco.
+ * Pode ser pessoa física ({@link PessoaFisica}) ou jurídica ({@link PessoaJuridica}).
+ */
+public abstract class Cliente {
 
-    private String nome;
-    private String cpf;
+    protected String telefone;
+    protected String email;
+    protected Endereco endereco;
 
-    public Cliente(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
+    /**
+     * @param telefone telefone de contato do cliente
+     * @param email    e-mail do cliente
+     * @param endereco endereço do cliente
+     */
+    public Cliente(String telefone, String email, Endereco endereco) {
+        this.telefone = telefone;
+        this.email = email;
+        this.endereco = endereco;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    /**
+     * @param telefone novo telefone de contato
+     */
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    /**
+     * @param email novo e-mail
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getNome() {
-        return nome;
+    /**
+     * @param endereco novo endereço
+     */
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
-    public String getCpf() {
-        return cpf;
+    /** @return telefone de contato */
+    public String getTelefone() {
+        return telefone;
     }
+
+    /** @return e-mail */
+    public String getEmail() {
+        return email;
+    }
+
+    /** @return endereço */
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    /**
+     * Retorna o nome de exibição do cliente.
+     * Para PF retorna o nome; para PJ retorna a razão social.
+     *
+     * @return nome do cliente
+     */
+    public abstract String getNome();
 
 }

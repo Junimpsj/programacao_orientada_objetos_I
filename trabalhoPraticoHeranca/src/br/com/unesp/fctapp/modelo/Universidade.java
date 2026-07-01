@@ -58,6 +58,7 @@ public class Universidade {
         for(int i = 0 ; i < departamentos.size() ; i++){
             if(departamentos.get(i).getCodigo() == codigo) {
                 departamentos.remove(i);
+                break;
             }
         }
     }

@@ -85,6 +85,7 @@ public class Departamento {
         for(int i = 0 ; i < funcionarios.size() ; i++) {
             if(funcionarios.get(i).getCodigo() == codigo) {
                 funcionarios.remove(i);
+                break;
             }
         }
     }

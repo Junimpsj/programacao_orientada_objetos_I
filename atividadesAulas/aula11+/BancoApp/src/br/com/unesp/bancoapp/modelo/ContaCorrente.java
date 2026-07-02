@@ -28,6 +28,11 @@ public class ContaCorrente extends Conta{
         this. limite = limite;
     }
 
+    /** @return limite de crédito da conta corrente */
+    public double getLimite() {
+        return limite;
+    }
+
     /**
      * Aplica o dobro da taxa base no saldo (taxa * 2).
      *

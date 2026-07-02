@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"br.com.unesp.bancoapp.aplicacao"},{"l":"br.com.unesp.bancoapp.modelo"},{"l":"br.com.unesp.bancoapp.servico"}];updateSearchResults();
